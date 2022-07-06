@@ -70,6 +70,292 @@
 </head>
 <body>
 
+    <header class="header" id="header">  <!-- Début du header -->
+        <nav class="nav" id="nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-1 col-md-2">
+                        <div class="logo" id="logo">
+                            <a href="index.html" class="link-logo" id="link-logo">
+                                <img src="public/img/logo/MayGardenLogo.png" alt="Logo du site">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-10">
+                        <div class="icon-menu" id="icon-menu">
+                            <span class="span-menu" id="span-menu" onclick="menuOpen()"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                        <div class="nav-cnt" id="nav-cnt">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeOpen()">
+                                <i class="fa-solid fa-xmark"></i>
+                            </a>
+                            <div class="cnt-nav" id="cnt-nav">
+                                <ul class="list-unstyled">
+                                    <li class="nav-menu">
+                                        <a href="templates/propos/propos.html" class="a-link">Histoire</a>
+                                    </li>
+                                    <li class="dropdown drop-menu" id="dropdown">
+                                        <a href="#" class="a-drop">
+                                            Services
+                                            <span class="icon-drop" id="icon-drop"><i class="fa-solid fa-angle-down"></i></span>
+                                        </a>
+                                        <ul class="dropdown-menu list-dropdown" id="ul-dropdown">
+                                            <li class="dropdown-submenu">
+                                                <a href="templates/services/beaute.html" class="link-a-drop">
+                                                    Beauté
+                                                </a>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="templates/services/piscine.html" class="link-a-drop">
+                                                    Piscine
+                                                </a>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="templates/services/spa-beaute.html" class="link-a-drop">
+                                                    Spa & Détente
+                                                </a>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="templates/services/sport.html" class="link-a-drop">
+                                                    Salle de sport
+                                                </a>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="templates/services/yoga.html" class="link-a-drop">
+                                                    Yoga
+                                                </a>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="templates/services/services.html" class="link-a-drop">
+                                                    Services
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="mb-1 drop-res" id="drop-res">
+                                        <button class="btn btn-toggle align-items-center btn-a rounded collapsed" id="btn-a" data-bs-toggle="collapse" data-bs-target="#services-collapse" aria-expanded="false">
+                                            Services <span class="icon-drop"><i class="fa-solid fa-angle-down"></i></span>
+                                        </button>
+                                        <div class="collapse menu-dropdown" id="services-collapse">
+                                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                                <li><a href="templates/services/beaute.html" class="link-dark rounded">Beauté</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a href="templates/services/piscine.html" class="link-dark rounded">Piscine</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a href="templates/services/spa-beaute.html" class="link-dark rounded">Spa & Détente</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a href="templates/services/sport.html" class="link-dark rounded">Salle de sport</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a href="templates/services/yoga.html" class="link-dark rounded">Yoga</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a href="templates/services/services.html" class="link-dark rounded">Tous les services</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-menu">
+                                        <a href="templates/blog/blog.html" class="a-link">Blog</a>
+                                    </li>
+                                    <li class="dropdown drop-menu" id="dropdown">
+                                        <a href="#" class="a-shop">
+                                            Boutique
+                                            <span class="icon-drop" id="icon-drop"><i class="fa-solid fa-angle-down"></i></span>
+                                        </a>
+                                        <ul class="dropdown-menu list-dropdown" id="ul-dropdown">
+                                            <li class="dropdown-submenu">
+                                                <a href="#" class="link-a-shop">
+                                                    Cheveux 
+                                                    <span class="icon-drop" id="icon-drop"><i class="fa-solid fa-angle-right"></i></span>
+                                                </a>
+                                                <hr class="dropdown-divider">
+                                                <ul class="list-unstyled dropdown-menu">
+                                                    <li><a href="templates/boutique/cheveux/colorations.html">Colorations</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a href="templates/boutique/cheveux/soins.html">Soins</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a href="templates/boutique/cheveux/brosse.html">Brosse</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a href="templates/boutique/cheveux/elastique.html">Élastique</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="#" class="link-a-shop">
+                                                    Maquillage 
+                                                    <span class="icon-drop" id="icon-drop"><i class="fa-solid fa-angle-right"></i></span>
+                                                </a>
+                                                <hr class="dropdown-divider">
+                                                <ul class="list-unstyled dropdown-menu">
+                                                    <li><a href="templates/boutique/beaute/teint.html">Teint</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a href="templates/boutique/beaute/yeux.html">Yeux</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a href="templates/boutique/beaute/sourcils.html">Sourcils</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a href="templates/boutique/beaute/pinceaux.html">Pinceaux</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a href="templates/boutique/beaute/packs.html">Packs</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="#" class="link-a-shop">
+                                                    Détente
+                                                    <span class="icon-drop" id="icon-drop"><i class="fa-solid fa-angle-right"></i></span>
+                                                </a>
+                                                <hr class="dropdown-divider">
+                                                <ul class="list-unstyled dropdown-menu">
+                                                    <li><a href="templates/boutique/detente/soins.html">Soins</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a href="templates/boutique/detente/huiles.html">Huiles</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="templates/boutique/accessoires/accessoires.html" class="link-a-shop">
+                                                    Accessoires
+                                                </a>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="templates/boutique/boutique.html" class="link-a-shop">
+                                                    La boutique
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="mb-1 drop-res" id="drop-res">
+                                        <button class="btn btn-toggle align-items-center btn-a rounded collapsed" id="btn-a" data-bs-toggle="collapse" data-bs-target="#boutique-collapse" aria-expanded="false">
+                                            Boutique <span class="icon-drop"><i class="fa-solid fa-angle-down"></i></span>
+                                        </button>
+                                        <div class="collapse menu-dropdown" id="boutique-collapse">
+                                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                                <li><a href="templates/boutique/cheveux/cheveux.html" class="link-dark rounded">Cheveux</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a href="templates/boutique/beaute/beaute.html" class="link-dark rounded">Beauté</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a href="templates/boutique/detente/detente.html" class="link-dark rounded">Détente</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a href="templates/boutique/accessoires/accessoires.html" class="link-dark rounded">Accessoires</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a href="templates/boutique/boutique.html" class="link-dark rounded">La boutique</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-menu">
+                                        <a href="templates/contact/contact.html" class="a-link">Contact</a>
+                                    </li>
+                                    <div class="reseaux" id="reseaux">
+                                        <div class="col-md-12">
+                                            <div class="title-menu" id="title-menu">
+                                                <h5>Réseaux sociaux</h5>
+                                            </div>
+                                        </div>
+                                        <div class="images" id="images">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <img src="public/img/feed/Feed-1.png" alt="Feed réseaux">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <img src="public/img/feed/Feed-2.png" alt="Feed réseaux">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <img src="public/img/feed/Feed-3.png" alt="Feed réseaux">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="images-2" id="images-2">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <img src="public/img/feed/Feed-4.png" alt="Feed réseaux">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <img src="public/img/feed/Feed-5.png" alt="Feed réseaux">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <img src="public/img/feed/Feed-6.png" alt="Feed réseaux">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="members" id="members">
+                                        <div class="title-menu" id="title-menu">
+                                            <h5>Membres</h5>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="templates/membres/connexion.html">Connexion</a>
+                                            </li>
+                                            <li>
+                                                <a href="templates/membres/inscription.html">Inscription</a>
+                                            </li>
+                                            <li>
+                                                <a href="templates/membres/cartes.html">Cartes</a>
+                                            </li>
+                                            <li>
+                                                <a href="templates/prix/forfaits.html">Forfaits</a>
+                                            </li>
+                                            <li>
+                                                <a href="templates/prix/formules.html">Formules</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-aide" id="menu-aide">
+                                        <div class="title-menu" id="title-menu">
+                                            <h5>Besoin d'aide ? </h5>
+                                        </div>
+                                        <ul class="list-unstyled nav-menu-aide">
+                                            <li class="nav-menu">
+                                                <a href="templates/documents/conditions.html" class="a-aide">Conditions d'utilisation</a>
+                                            </li>
+                                            <li class="nav-menu">
+                                                <a href="templates/documents/cgv.html" class="a-aide">Conditions générales de vente</a>
+                                            </li>
+                                            <li class="nav-menu">
+                                                <a href="templates/documents/livraisons-retour.html" class="a-aide">Livraisons & Retours</a>
+                                            </li>
+                                            <li class="nav-menu">
+                                                <a href="templates/documents/mentions-legales.html" class="a-aide">Mentions légales</a>
+                                            </li>
+                                            <li class="nav-menu">
+                                                <a href="#" class="a-aide">Préférences des cookies</a>
+                                            </li>
+                                            <li class="nav-menu">
+                                                <a href="templates/documents/cookies.html" class="a-aide">Politique des cookies</a>
+                                            </li>
+                                            <li class="nav-menu">
+                                                <a href="templates/documents/centre.html" class="a-aide">Politique du centre</a>
+                                            </li>
+                                            <li class="nav-menu">
+                                                <a href="templates/documents/confidentialite.html" class="a-aide">Politique de confidenitalité</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="copyright-menu" id="copyright-menu">
+                                        <h6>&copy; 2022 MayGarden - Tous droits Réservés</h6>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2">
+                        <div class="cnx-shop" id="cnx-shop">
+                            <a href="templates/membres/connexion.html">
+                                <span class="icon icon-user" id="icon icon-user"><i class="fa-solid fa-user"></i></span> 
+                                <span class="name">Connexion</span>
+                            </a>
+                            <a href="templates/membres/panier.html">
+                                <span class="icon icon-shop" id="icon icon-shop"><i class="fa-solid fa-shop"></i></span> 
+                                <span class="name">Panier</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header> <!-- / Fin du header -->
+
     <footer class="footer" id="footer">
         <div class="container">
             <div class="row">
