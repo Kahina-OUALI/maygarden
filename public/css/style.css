@@ -727,7 +727,66 @@ footer .hours {
 }
 @media screen and (max-width: 480px) {
   .int-sec {
-    height: 480px;
+    height: 500px;
+  }
+}
+
+.services {
+  padding: 5rem 0 5rem 0;
+  background-color: #2D2926;
+}
+@media screen and (max-width: 480px) {
+  .services {
+    padding: 3rem 0 3rem 0;
+  }
+}
+.services .cnt-serv ul {
+  display: flex;
+}
+.services .cnt-serv ul li {
+  margin-right: 15%;
+  border-bottom: 1px solid #C59F7B;
+}
+.services .cnt-serv ul li a {
+  text-decoration: none;
+}
+.services .cnt-serv ul li a .title-serv {
+  padding: 20px 0px 20px 0px;
+}
+.services .cnt-serv ul li a .title-serv h5 {
+  font-size: 21px;
+  font-weight: 600;
+  color: #E4E4E4;
+  text-align: center;
+  letter-spacing: 4.6px;
+  text-transform: capitalize;
+  font-family: "Antic Didone", serif;
+}
+@media screen and (max-width: 480px) {
+  .services .cnt-serv ul li {
+    border: none;
+  }
+}
+@media screen and (max-width: 780px) {
+  .services .cnt-serv ul li {
+    margin-right: 8% !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .services .cnt-serv ul li {
+    margin-right: 12%;
+  }
+}
+.services .cnt-serv ul .icon {
+  text-align: center;
+}
+.services .cnt-serv ul .icon img {
+  padding: 20px;
+  border: 2px solid #D08C60;
+}
+@media screen and (max-width: 480px) {
+  .services .cnt-serv ul {
+    display: block;
   }
 }
 

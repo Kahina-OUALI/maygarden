@@ -113,6 +113,12 @@ $layout-breakpoints-xs-sm: 1170px;
         }
     }
 }
+%text {
+    font-weight: 300;
+    font-size: 10px;
+    text-align: justify;
+    font-family: $text;
+}
 %text-footer {
     color: $beige;
     font-weight: 300;
