@@ -55,7 +55,10 @@ header ul .dropdown .dropdown-menu .dropdown-submenu > .dropdown-menu li a i, he
 }
 
 .int-sec .cnt-sec,
-.int-sec .cnt-sec-two, .documents .intro-doc h1 {
+.int-sec .cnt-sec-two, section h2,
+section h3,
+section h4,
+section h5, .documents .intro-doc h1 {
   font-weight: 600;
   letter-spacing: 4.6px;
   text-transform: uppercase;
@@ -93,6 +96,12 @@ footer h6 {
   color: #D08C60;
 }
 
+section p {
+  font-weight: 300;
+  text-align: justify;
+  font-family: "Nunito Sans", sans-serif;
+}
+
 footer .copyright .copy, footer .news .form input::placeholder, footer .news .form input, footer .news p, footer .contact p, footer p,
 footer .holiday {
   color: #EFE4CB;
@@ -112,6 +121,7 @@ footer .news .form .btn {
   border-radius: 0px;
   transition: all 0.5s;
   letter-spacing: 3px;
+  text-transform: uppercase;
   border: 0.5px solid #D08C60;
   background-color: transparent;
   font-family: "Antic Didone", serif;
@@ -140,6 +150,49 @@ footer .news .form .btn:hover span {
   padding-right: 25px;
 }
 footer .news .form .btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.spa .btn {
+  padding: 15px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #C59F7B;
+  text-align: center;
+  border-radius: 0px;
+  transition: all 0.5s;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border: 2px solid #D08C60;
+  background-color: transparent;
+  font-family: "Antic Didone", serif;
+}
+.spa .btn span {
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 3px;
+  font-family: "Antic Didone", serif;
+}
+.spa .btn span::after {
+  top: 0;
+  opacity: 0;
+  right: -20px;
+  content: "»";
+  transition: 0.5s;
+  position: absolute;
+}
+.spa .btn:hover {
+  border: 0.5px solid #C59F7B;
+  background: #C59F7B;
+}
+.spa .btn:hover span {
+  color: #EFE4CB;
+  padding-right: 25px;
+}
+.spa .btn:hover span:after {
   opacity: 1;
   right: 0;
 }
@@ -675,6 +728,23 @@ footer .hours {
   text-decoration: underline;
 }
 
+section h2,
+section h3,
+section h4,
+section h5 {
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+section p {
+  font-size: 18px;
+}
+section p strong {
+  font-weight: 800;
+}
+section .btn {
+  margin-top: 30px;
+}
+
 .int-sec {
   height: 850px;
   background-size: cover;
@@ -727,7 +797,7 @@ footer .hours {
 }
 @media screen and (max-width: 480px) {
   .int-sec {
-    height: 500px;
+    height: 580px;
   }
 }
 
@@ -788,6 +858,54 @@ footer .hours {
   .services .cnt-serv ul {
     display: block;
   }
+}
+
+.spa {
+  padding: 5rem 0 5rem 0;
+  background-color: #EFE4CB;
+}
+.spa .cnt-spa {
+  padding: 20% 0% 20% 0%;
+}
+.spa .cnt-spa h3 {
+  color: #C59F7B;
+}
+@media screen and (max-width: 1024px) {
+  .spa .cnt-spa h3 {
+    line-height: 50px;
+  }
+}
+.spa .cnt-spa p {
+  padding-right: 14%;
+}
+.spa .img-one {
+  z-index: 8;
+  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .spa .img-one img {
+    width: 100%;
+  }
+}
+.spa .img-two {
+  margin-top: -44px;
+}
+.spa .img-two img {
+  text-align: end;
+  padding: 0px 0px 0 35px;
+}
+@media screen and (max-width: 1024px) {
+  .spa .img-two img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .spa .img-two {
+    margin: -5% -6% 0 9%;
+  }
+}
+.spa .btn {
+  width: 45%;
 }
 
 /*# sourceMappingURL=style.css.map */
