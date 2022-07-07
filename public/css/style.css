@@ -54,6 +54,14 @@ header ul .dropdown .dropdown-menu .dropdown-submenu > .dropdown-menu li a i, he
   color: #D08C60;
 }
 
+.int-sec .cnt-sec,
+.int-sec .cnt-sec-two, .documents .intro-doc h1 {
+  font-weight: 600;
+  letter-spacing: 4.6px;
+  text-transform: uppercase;
+  font-family: "Antic Didone", serif;
+}
+
 footer .contact h4,
 footer .contact h5,
 footer .contact h6, footer h4,
@@ -65,6 +73,24 @@ footer h6 {
   letter-spacing: 4.6px;
   text-transform: uppercase;
   font-family: "Antic Didone", serif;
+}
+
+.documents .intro-doc .txt-intro p {
+  color: #2D2D2D;
+  font-weight: 600;
+  font-size: 13px;
+  text-align: justify;
+  font-family: "Nunito Sans", sans-serif;
+}
+.documents .intro-doc .txt-intro p a,
+.documents .intro-doc .txt-intro p strong {
+  color: #D08C60;
+  font-weight: 900;
+}
+.documents .intro-doc .txt-intro p a:hover, .documents .intro-doc .txt-intro p a:active,
+.documents .intro-doc .txt-intro p strong:hover,
+.documents .intro-doc .txt-intro p strong:active {
+  color: #D08C60;
 }
 
 footer .copyright .copy, footer .news .form input::placeholder, footer .news .form input, footer .news p, footer .contact p, footer p,
@@ -116,6 +142,22 @@ footer .news .form .btn:hover span {
 footer .news .form .btn:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+.documents .cnt-doc .accordion-item .accordion-header .accordion-button {
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.documents .cnt-doc .accordion-item .accordion-body p,
+.documents .cnt-doc .accordion-item .accordion-body span {
+  font-size: 13.5px;
+  color: #2D2D2D;
+  font-weight: 300;
+  text-align: justify;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 header {
@@ -215,7 +257,7 @@ header ul .dropdown .dropdown-menu .dropdown-submenu > .dropdown-menu {
   left: 100%;
   border: none;
   border-radius: 0px;
-  min-width: 6.3rem !important;
+  min-width: 13.3rem !important;
   margin-top: -8px;
 }
 header ul .dropdown .dropdown-menu .dropdown-submenu > .dropdown-menu li {
@@ -548,6 +590,144 @@ footer .hours {
   }
   footer .copyright {
     text-align: left;
+  }
+}
+
+.documents .intro-doc {
+  padding: 5% 0 5% 0;
+}
+.documents .intro-doc h1 {
+  font-size: 55px;
+  text-align: center;
+  color: #2D2D2D;
+}
+@media screen and (max-width: 480px) {
+  .documents .intro-doc h1 {
+    font-size: 35px;
+  }
+}
+.documents .intro-doc .txt-intro {
+  margin: 2% 0% 0% 0%;
+}
+.documents .intro-doc .txt-intro p {
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .documents .intro-doc {
+    padding: 10% 0% 10% 0%;
+  }
+}
+.documents .cnt-doc {
+  padding: 0% 0% 5% 0%;
+}
+@media screen and (max-width: 480px) {
+  .documents .cnt-doc {
+    padding: 0% 0% 10% 0%;
+  }
+}
+.documents .cnt-doc .accordion-item {
+  border: 0.2px solid #c59f7b7e;
+}
+.documents .cnt-doc .accordion-item .accordion-header .accordion-button {
+  font-size: 12px;
+}
+@media screen and (max-width: 480px) {
+  .documents .cnt-doc .accordion-item .accordion-header .accordion-button {
+    font-size: 10px;
+  }
+}
+.documents .cnt-doc .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  color: #EFE4CB;
+  background-color: #C59F7B;
+}
+.documents .cnt-doc .accordion-item .accordion-body p strong,
+.documents .cnt-doc .accordion-item .accordion-body span strong {
+  font-weight: 800;
+  color: #D08C60;
+}
+@media screen and (max-width: 480px) {
+  .documents .cnt-doc .accordion-item .accordion-body p,
+.documents .cnt-doc .accordion-item .accordion-body span {
+    font-size: 11.5px;
+  }
+}
+.documents .cnt-doc .accordion-item .accordion-body .list-body {
+  margin-left: 5%;
+}
+.documents .cnt-doc .accordion-item .accordion-body .list-body span i {
+  color: #D08C60;
+  margin-right: 10px;
+}
+.documents .cnt-doc .accordion-item .accordion-body .list-body .name {
+  font-weight: 800;
+  color: #D08C60;
+}
+.documents .cnt-doc .accordion-item .accordion-body .list-body-two {
+  margin: 1% 0% 0% 3%;
+}
+.documents .cnt-doc .accordion-item .accordion-body .list-body-two span i {
+  color: #EFE4CB;
+  margin-right: 10px;
+}
+.documents .cnt-doc .accordion-item .accordion-body .name-sec {
+  margin-left: 5%;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.int-sec {
+  height: 850px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-image: url("../img/fond/Fond - MayGarden.png");
+}
+.int-sec .cnt-sec,
+.int-sec .cnt-sec-two {
+  color: #E4E4E4;
+}
+.int-sec .cnt-sec {
+  position: relative;
+  margin: 5% 0% 0% 0%;
+}
+.int-sec .cnt-sec h1 {
+  font-size: 60px;
+}
+@media screen and (max-width: 480px) {
+  .int-sec .cnt-sec h1 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .int-sec .cnt-sec {
+    padding: 11% 0% 0% 0%;
+  }
+}
+.int-sec .cnt-sec-two {
+  text-align: end;
+  margin: 45% 0% 0% 0%;
+}
+.int-sec .cnt-sec-two h2 {
+  font-size: 60px;
+}
+@media screen and (max-width: 480px) {
+  .int-sec .cnt-sec-two h2 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .int-sec .cnt-sec-two {
+    padding: 23% 0% 0% 0%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .int-sec .cnt-sec-two {
+    margin: 63% 0% 0% 0%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .int-sec {
+    height: 480px;
   }
 }
 

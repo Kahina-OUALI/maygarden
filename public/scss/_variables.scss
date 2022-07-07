@@ -97,6 +97,22 @@ $layout-breakpoints-xs-sm: 1170px;
     text-transform: uppercase;
     font-family: $title;
 }
+%text-intro {
+    color: $second-black;
+    font-weight: 600;
+    font-size: 13px;
+    text-align: justify;
+    font-family: $text;
+    a, 
+    strong {
+        color: $coral;
+        font-weight: 900;
+        &:hover,
+        &:active {
+            color: $coral;
+        }
+    }
+}
 %text-footer {
     color: $beige;
     font-weight: 300;
@@ -147,4 +163,20 @@ $layout-breakpoints-xs-sm: 1170px;
 			}
 		}
 	}
+}
+
+// ACCORDION 
+
+%title-accordion {
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: $text;
+}
+%text-accordion {
+    font-size: 13.5px;
+    color: $second-black;
+    font-weight: 300;
+    text-align: justify;
+    font-family: $text;
 }

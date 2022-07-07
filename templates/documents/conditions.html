@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions Générales d'Utilisation | MayGarden</title>
+    <meta name="description" 
+    content="MayGarden est un centre dédié 100 % au bien-être, relaxation et à la beauté, 
+    avec une boutique à disposition pour que vous ayez ce qu'il faut. Il est aussi 100 %, femmes.">
+    <meta name="keywords" content="bien-être, beauté, beaute, relaxation, detente, 100% femmes">
+
+    <!-- Début pour les réseaux sociaux -->
+
+    <meta property="og:site_name" content="MayGarden"/>
+    <meta property="og:title" content="Accueil | MayGarden" />
+    <meta property="og:url" content="https://kahina-ouali.github.io/maygarden/" />
+    <meta property="og:image" content="https://kahina-ouali.github.io/maygarden/public/img/logo/MayGardenLogo.png" />
+    <meta property="og:description" content="
+    MayGarden est un centre dédié 100 % au bien-être, relaxation et à la beauté, 
+    avec une boutique à disposition pour que vous ayez ce qu'il faut. Il est aussi 100 %, femmes." />
+
+    <!-- / Fin pour les réseaux sociaux -->
+
+    <!-- Favicon -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../../public/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../public/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../public/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../public/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../public/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../public/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../public/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../public/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../public/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../../public/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../public/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../public/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../public/img/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../../public/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- / Fin Favicon -->
+
+    <!-- Début Canonical --> <link rel="canonical" href="https://kahina-ouali.github.io/maygarden/"> <!-- / Fin Canonical -->
+
+    <!-- Début Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- / Fin Bootstrap -->
+
+    <!-- Début Fonts Google -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" 
+    rel="stylesheet">
+
+    <!-- / Fin Fonts Google -->
+
+    <!-- Début du style -->
+
+    <link rel="stylesheet" href="../../public/css/style.css">
+
+    <!-- / Fin du style -->
+
+</head>
+<body>
+
+    <header class="header" id="header">  <!-- Début du header -->
+        <nav class="nav" id="nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-1 col-md-2">
+                        <div class="logo" id="logo">
+                            <a href="index.html" class="link-logo" id="link-logo">
+                                <img src="../../public/img/logo/MayGardenLogo.png" alt="Logo du site">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-10">
+                        <div class="icon-menu" id="icon-menu">
+                            <span class="span-menu" id="span-menu" onclick="menuOpen()"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                        <div class="nav-cnt" id="nav-cnt">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeOpen()">
+                                <i class="fa-solid fa-xmark"></i>
+                            </a>
+                            <div class="cnt-nav" id="cnt-nav">
+                                <ul class="list-unstyled">
+                                    <li class="nav-menu">
+                                        <a href="../propos/propos.html" class="a-link">Histoire</a>
+                                    </li>
+                                    <li class="dropdown drop-menu" id="dropdown">
+                                        <a href="#" class="a-drop">
+                                            Services
+                                            <span class="icon-drop" id="icon-drop"><i class="fa-solid fa-angle-down"></i></span>
+                                        </a>
+                                        <ul class="dropdown-menu list-dropdown" id="ul-dropdown">
+                                            <li class="dropdown-submenu">
+                                                <a href="../services/beaute.html" class="link-a-drop">
+                                                    Beauté
+                                                </a>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="../services/piscine.html" class="link-a-drop">
+                                                    Piscine
+                                                </a>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="../services/spa-beaute.html" class="link-a-drop">
+                                                    Spa & Détente
+                                                </a>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="../services/sport.html" class="link-a-drop">
+                                                    Salle de sport
+                                                </a>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="../services/yoga.html" class="link-a-drop">
+                                                    Yoga
+                                                </a>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="../services/services.html" class="link-a-drop">
+                                                    Services
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="mb-1 drop-res" id="drop-res">
+                                        <button class="btn btn-toggle align-items-center btn-a rounded collapsed" id="btn-a" data-bs-toggle="collapse" data-bs-target="#services-collapse" aria-expanded="false">
+                                            Services <span class="icon-drop"><i class="fa-solid fa-angle-down"></i></span>
+                                        </button>
+                                        <div class="collapse menu-dropdown" id="services-collapse">
+                                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                                <li><a href="../services/beaute.html" class="link-dark rounded">Beauté</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a href="../services/piscine.html" class="link-dark rounded">Piscine</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a href="../services/spa-beaute.html" class="link-dark rounded">Spa & Détente</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a href="../services/sport.html" class="link-dark rounded">Salle de sport</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a href="../services/yoga.html" class="link-dark rounded">Yoga</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a href="../services/services.html" class="link-dark rounded">Tous les services</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-menu">
+                                        <a href="../blog/blog.html" class="a-link">Blog</a>
+                                    </li>
+                                    <li class="dropdown drop-menu" id="dropdown">
+                                        <a href="#" class="a-shop">
+                                            Boutique
+                                            <span class="icon-drop" id="icon-drop"><i class="fa-solid fa-angle-down"></i></span>
+                                        </a>
+                                        <ul class="dropdown-menu list-dropdown" id="ul-dropdown">
+                                            <li class="dropdown-submenu">
+                                                <a href="#" class="link-a-shop">
+                                                    Cheveux 
+                                                    <span class="icon-drop" id="icon-drop"><i class="fa-solid fa-angle-right"></i></span>
+                                                </a>
+                                                <hr class="dropdown-divider">
+                                                <ul class="list-unstyled dropdown-menu">
+                                                    <li><a href="../boutique/cheveux/colorations.html">Colorations</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a href="../boutique/cheveux/soins.html">Soins</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a href="../boutique/cheveux/brosse.html">Brosse</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a href="../boutique/cheveux/elastique.html">Élastique</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a href="../boutique/cheveux/shampooing-conditionner.html">shampooing & Après shampooing</a></li>
+                                                    <li><hr class="dropdown-divider"></li> 
+                                                    <li><a href="../boutique/cheveux/packs.html">Packs</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a href="../boutique/cheveux/cheveux.html">Tous les produits</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="#" class="link-a-shop">
+                                                    Maquillage 
+                                                    <span class="icon-drop" id="icon-drop"><i class="fa-solid fa-angle-right"></i></span>
+                                                </a>
+                                                <hr class="dropdown-divider">
+                                                <ul class="list-unstyled dropdown-menu">
+                                                    <li><a href="../boutique/beaute/teint.html">Teint</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a href="../boutique/beaute/yeux.html">Yeux</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a href="../boutique/beaute/sourcils.html">Sourcils</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a href="../boutique/beaute/pinceaux.html">Pinceaux</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a href="../boutique/beaute/packs.html">Packs</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a href="../boutique/beaute/beaute.html">Tous les produits</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="#" class="link-a-shop">
+                                                    Détente
+                                                    <span class="icon-drop" id="icon-drop"><i class="fa-solid fa-angle-right"></i></span>
+                                                </a>
+                                                <hr class="dropdown-divider">
+                                                <ul class="list-unstyled dropdown-menu">
+                                                    <li><a href="../boutique/detente/soins.html">Soins</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a href="../boutique/detente/huiles.html">Huiles</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a href="../boutique/detente/packs.html">Packs</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a href="../boutique/detente/detente.html">Tous les produits</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="../boutique/accessoires/accessoires.html" class="link-a-shop">
+                                                    Accessoires
+                                                </a>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="../boutique/boutique.html" class="link-a-shop">
+                                                    La boutique
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="mb-1 drop-res" id="drop-res">
+                                        <button class="btn btn-toggle align-items-center btn-a rounded collapsed" id="btn-a" data-bs-toggle="collapse" data-bs-target="#boutique-collapse" aria-expanded="false">
+                                            Boutique <span class="icon-drop"><i class="fa-solid fa-angle-down"></i></span>
+                                        </button>
+                                        <div class="collapse menu-dropdown" id="boutique-collapse">
+                                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                                <li><a href="../boutique/cheveux/cheveux.html" class="link-dark rounded">Cheveux</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a href="../boutique/beaute/beaute.html" class="link-dark rounded">Beauté</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a href="../boutique/detente/detente.html" class="link-dark rounded">Détente</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a href="../boutique/accessoires/accessoires.html" class="link-dark rounded">Accessoires</a></li>
+                                                <li><hr class="dropdown-divider"></li>
+                                                <li><a href="../boutique/boutique.html" class="link-dark rounded">La boutique</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-menu">
+                                        <a href="../contact/contact.html" class="a-link">Contact</a>
+                                    </li>
+                                    <div class="reseaux" id="reseaux">
+                                        <div class="col-md-12">
+                                            <div class="title-menu" id="title-menu">
+                                                <h5>Réseaux sociaux</h5>
+                                            </div>
+                                        </div>
+                                        <div class="images" id="images">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <img src="../../public/img/feed/Feed-1.png" alt="Feed réseaux">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <img src="../../public/img/feed/Feed-2.png" alt="Feed réseaux">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <img src="../../public/img/feed/Feed-3.png" alt="Feed réseaux">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="images-2" id="images-2">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <img src="../../public/img/feed/Feed-4.png" alt="Feed réseaux">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <img src="../../public/img/feed/Feed-5.png" alt="Feed réseaux">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <img src="../../public/img/feed/Feed-6.png" alt="Feed réseaux">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="members" id="members">
+                                        <div class="title-menu" id="title-menu">
+                                            <h5>Membres</h5>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="../membres/connexion.html">Connexion</a>
+                                            </li>
+                                            <li>
+                                                <a href="../membres/inscription.html">Inscription</a>
+                                            </li>
+                                            <li>
+                                                <a href="../membres/cartes.html">Cartes</a>
+                                            </li>
+                                            <li>
+                                                <a href="../prix/forfaits.html">Forfaits</a>
+                                            </li>
+                                            <li>
+                                                <a href="../prix/formules.html">Formules</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-aide" id="menu-aide">
+                                        <div class="title-menu" id="title-menu">
+                                            <h5>Besoin d'aide ? </h5>
+                                        </div>
+                                        <ul class="list-unstyled nav-menu-aide">
+                                            <li class="nav-menu">
+                                                <a href="../documents/conditions.html" class="a-aide">Conditions d'utilisation</a>
+                                            </li>
+                                            <li class="nav-menu">
+                                                <a href="../documents/cgv.html" class="a-aide">Conditions générales de vente</a>
+                                            </li>
+                                            <li class="nav-menu">
+                                                <a href="../documents/livraisons-retour.html" class="a-aide">Livraisons & Retours</a>
+                                            </li>
+                                            <li class="nav-menu">
+                                                <a href="../documents/mentions-legales.html" class="a-aide">Mentions légales</a>
+                                            </li>
+                                            <li class="nav-menu">
+                                                <a href="#" class="a-aide">Préférences des cookies</a>
+                                            </li>
+                                            <li class="nav-menu">
+                                                <a href="../documents/cookies.html" class="a-aide">Politique des cookies</a>
+                                            </li>
+                                            <li class="nav-menu">
+                                                <a href="../documents/centre.html" class="a-aide">Politique du centre</a>
+                                            </li>
+                                            <li class="nav-menu">
+                                                <a href="../documents/confidentialite.html" class="a-aide">Politique de confidenitalité</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="copyright-menu" id="copyright-menu">
+                                        <h6>&copy; 2022 MayGarden - Tous droits Réservés</h6>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2">
+                        <div class="cnx-shop" id="cnx-shop">
+                            <a href="../membres/connexion.html">
+                                <span class="icon icon-user" id="icon icon-user"><i class="fa-solid fa-user"></i></span> 
+                                <span class="name">Connexion</span>
+                            </a>
+                            <a href="../membres/panier.html">
+                                <span class="icon icon-shop" id="icon icon-shop"><i class="fa-solid fa-shop"></i></span> 
+                                <span class="name">Panier</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header> <!-- / Fin du header -->
+
+    <main class="documents" id="documents">
+        <section class="intro-doc" id="intro-doc">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Conditions générales d'utilisation : MayGarden</h1>
+                       <div class="txt-intro" id="txt-intro">
+                            <p>
+                                Les présentes Conditions Générales d’Utilisation régissent l’utilisation du site 
+                                <a href="https://kahina-ouali.github.io/maygarden/">https://kahina-ouali.github.io/maygarden/</a>.
+                                <br>
+                                Ce site appartient et est géré par Kahina Ouali. 
+                                En utilisant ce site, vous indiquez que vous avez lu et compris les conditions d’utilisation et que vous acceptez de les respecter en tout temps. 
+                                Type de site : <strong>e-commerce</strong>
+                            </p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cnt-doc" id="cnt-doc">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Article n°1 : Propriété intellectuelle
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Tout contenu publié et mis à disposition sur ce site est la propriété de Kahina Ouali et de ses créateurs. Cela comprend, mais n’est pas 
+                                        limité aux images, produits, textes, logos, documents fichiers téléchargeables et tout ce qui contribue à la composition de ce site. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Article n°2 : Restrictions d'âge
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        L’âge minimum pour utiliser ce site est de 15 ans. Les utilisateurs conviennent qu’en utilisant notre site, ils ont plus de 15 ans. 
+                                        Nous n’assumons aucune responsabilité juridique pour les fausses déclarations sur l’âge.  
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Article n°3 : Utilisation acceptable
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        En tant qu’utilisateur, vous acceptez d’utiliser notre site légalement et de ne pas utiliser ce site pour des fins illicites, à savoir : 
+                                        <br>
+                                        <div class="list-body" id="list-body">
+                                            <span><i class="fa-solid fa-arrow-right"></i> Harceler ou maltraiter les autres utilisateurs de ce site,</span>
+                                            <br>
+                                            <span><i class="fa-solid fa-arrow-right"></i> Violer les droits des autres utilisateurs de ce site,</span>
+                                            <br>
+                                            <span><i class="fa-solid fa-arrow-right"></i> Violer les droits de propriété intellectuelle des propriétaires du site ou de tout tiers 
+                                                au site,
+                                            </span>
+                                            <br>
+                                            <span><i class="fa-solid fa-arrow-right"></i> Pirater le compte d'un autre utilisateur de ce site,</span>
+                                            <br>
+                                            <span><i class="fa-solid fa-arrow-right"></i> Agir de toute façon qui pourrait être considérée comme frauduleuse,</span>
+                                            <br>
+                                            <span><i class="fa-solid fa-arrow-right"></i> Participer à toute activité illégale sur le site,</span>
+                                            <br>
+                                            <span><i class="fa-solid fa-arrow-right"></i> Afficher tout matériel qui peut être jugé inapproprié ou offensant,</span>
+                                            <br>
+                                            <span><i class="fa-solid fa-arrow-right"></i> Transmettre des virus informatiques qui pourraient affecter d'autres utilisateurs.</span>
+                                        </div>
+                                    </p>
+                                    <p>
+                                        Si nous estimons que vous utilisez ce site illégalement ou d’une manière qui viole les conditions d’utilisation acceptable ci-dessus, nous 
+                                        nous réservons le droit de limiter, suspendre ou résilier votre accès à ce site. Nous nous réservons également le droit de prendre 
+                                        toutes les mesures juridiques nécessaires pour vous empêcher d’accéder à notre site Internet. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Article n°4 : Contributions d'utilisateur
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Les utilisateurs peuvent publier les informations suivantes sur notre site : 
+                                        <br>
+                                        <div class="list-body" id="list-body">
+                                            <span class="name"><i class="fa-solid fa-arrow-right"></i> Photos,</span>
+                                            <br>
+                                            <span class="name"><i class="fa-solid fa-arrow-right"></i> Commentaires en public</span>
+                                        </div>
+                                    </p>
+                                    <p>
+                                        En affichant publiquement sur notre site, vous acceptez de ne pas agir illégalement ou violer les conditions d’utilisation acceptable énumérées dans ce document. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Article n°5 : Comptes
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Lorsque vous créez un compte sur notre site, vous acceptez ce qui suit : 
+                                        <div class="listbody" id="list-body">
+                                            <span class="name">
+                                                <i class="fa-solid fa-arrow-right"></i> Que vous êtes seul responsable de votre compte et de la sécurité et la confidentialité 
+                                                de votre compte, y compris les mots de passe ou les renseignements de nature délicate joints à ce compte.  
+                                            </span>
+                                            <br>
+                                            <span class="name">
+                                                <i class="fa-solid fa-arrow-right"></i> Que tous les renseignements personnels que vous nous fournissez par l’entremise de 
+                                                votre compte sont à jour, exacts et véridiques et que vous mettez à jour vos renseignements personnels s’ils changent.  
+                                            </span>
+                                        </div> 
+                                    </p>
+                                    <p>
+                                        Nous nous réservons le droit de suspendre ou de résilier votre compte si vous utilisez notre site illégalement ou si 
+                                        vous violez les conditions d’utilisation acceptable. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Article n°6 : Ventes des biens et services 
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Ce document régit la vente des biens et services mis à disposition sur notre site. 
+                                        Les bien que nous offrons comprennent : 
+                                        <div class="list-body" id="list-body">
+                                            <span><i class="fa-solid fa-arrow-right"></i> Produits,</span>
+                                            <br>
+                                            <span><i class="fa-solid fa-arrow-right"></i> Carte cadeaux ( e-carte, carte ),</span>
+                                            <br>
+                                            <span><i class="fa-solid fa-arrow-right"></i> Carte de fidélité,</span>
+                                            <br>
+                                            <span><i class="fa-solid fa-arrow-right"></i> Carte de membre,</span>
+                                            <br>
+                                            <span><i class="fa-solid fa-arrow-right"></i> Carte pour la salle de sport.</span>
+                                        </div>
+                                    </p>
+                                    <p>
+                                        Les services que nous offrons comprennent : 
+                                        <br>
+                                        <div class="list-body" id="list-body">
+                                            <span><i class="fa-solid fa-arrow-right"></i> Beauté ( cours de make-up, make-up artist, etc… ),</span>
+                                            <br>
+                                            <span><i class="fa-solid fa-arrow-right"></i> Piscine ( plusieurs piscine disponible ),</span>
+                                            <br>
+                                            <span><i class="fa-solid fa-arrow-right"></i> Spa & Détente ( massages, soins, coaching ),</span>
+                                            <br>
+                                            <span><i class="fa-solid fa-arrow-right"></i> Salle de sport ( coaching personnalisé, équipement, boissons, douches, etc… ),</span>
+                                            <br>
+                                            <span><i class="fa-solid fa-arrow-right"></i> Cours de Yoga. </span>
+                                        </div>
+                                    </p>
+                                    <p>
+                                        Les biens et services liés à ce document sont les biens et services qui sont affichés sur notre site au moment où vous y accédez. 
+                                        Cela comprend tous les produits énumérés comme étant en rupture de stock. Toutes les informations, descriptions ou images que nous 
+                                        fournissons sur nos biens et services sont décrites et présentées avec la plus grande précision possible. Cependant, nous ne sommes 
+                                        pas légalement tenus par ces informations, descriptions ou images car nous ne pouvons pas garantir l’exactitude de chaque produit ou 
+                                        service que nous fournissons. Vous acceptez d’acheter ces biens et services à vos propres risques. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Article n°7 : Paiements
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Nous acceptons les modes de paiement suivants sur ce site :
+                                        <div class="list-body" id="list-body">
+                                            <span class="name"><i class="fa-solid fa-arrow-right"></i> Paypal,</span>
+                                            <br>
+                                            <span class="name"><i class="fa-solid fa-arrow-right"></i> Carte bancaire,</span>
+                                            <br>
+                                            <span class="name"><i class="fa-solid fa-arrow-right"></i> Prélèvement automatique.</span>
+                                        </div>
+                                    </p>
+                                    <p>
+                                        Lorsque vous nous fournissez vos renseignements de paiement, vous nous confirmez que vous avez autorisé l’utilisation et l’accès 
+                                        à l’instrument de paiement que vous avez choisi d’utiliser. En nous fournissant vos détails de paiement, vous confirmez que vous 
+                                        nous autorisez à facturer le montant dû à cet instrument de paiement. 
+                                        Si nous estimons que votre paiement a violé une loi ou l’une de nos conditions d’utilisation, nous nous réservons le droit d’annuler 
+                                        votre transaction. 
+                                    </p>
+                                    <span class="name-sec" id="name-sec"><i class="fa-solid fa-arrow-right"></i> Article 7.1 : Les services</span>
+                                    <p>
+                                        Les services seront facturés en totalité. Si la demande est faite via le site Internet alors le client paiera le service à sa 
+                                        commande, en revanche si la demande de service est faite directement au centre alors le client paiera avant…. 
+                                    </p>
+                                    <span class="name-sec" id="name-sec"><i class="fa-solid fa-arrow-right"></i> Article 7.2 : Abonnements</span>
+                                    <p>
+                                        Tous nos abonnements récurrents seront automatiquement facturés et renouvelés jusqu’à ce que nous recevions d’avis que vous souhaitez annuler l’abonnement. 
+                                        Si vous souhaitez annuler vos abonnements, veuillez suivre ces différentes étapes : 
+                                        <div class="list-body" id="list-body">
+                                            <span class="name"><i class="fa-solid fa-arrow-right"></i> Envoyer un mail un mois avant,</span>
+                                            <br>
+                                            <span class="name"><i class="fa-solid fa-arrow-right"></i> Envoyer un mail avec l'intutilé "Annulation d'abonnement"</span>
+                                            <br>
+                                            <span class="name"><i class="fa-solid fa-arrow-right"></i> Donner ses informations personnelles comme : </span>
+                                            <div class="list-body-two">
+                                                <span><i class="fa-solid fa-arrow-right"></i> Nom,</span>
+                                                <br>
+                                                <span><i class="fa-solid fa-arrow-right"></i> Prénom,</span>
+                                                <br>
+                                                <span><i class="fa-solid fa-arrow-right"></i> Pseudo,</span>
+                                                <br>
+                                                <span><i class="fa-solid fa-arrow-right"></i> Numéro de compte.</span>
+                                            </div>
+                                            <br>
+                                            <span class="name"><i class="fa-solid fa-arrow-right"></i> Le type d'abonnement choisi,</span>
+                                            <br>
+                                            <span class="name"><i class="fa-solid fa-arrow-right"></i> Décrire sa situation ( au cas où une solution pourrait être possible ),</span>
+                                            <br>
+                                            <span class="name"><i class="fa-solid fa-arrow-right"></i> Réponse dans les 10 à 15 jours ouvrés après que la demande a été faite.</span>
+                                        </div>
+                                    </p>
+                                    <span class="name-sec" id="name-sec"><i class="fa-solid fa-arrow-right"></i> Article 7.3 : Essai gratuit</span>
+                                    <p>
+                                        Pour vous souhaiter la bienvenue nous vous offrons <strong>7 jours</strong> d’essai gratuit lorsque vous créez un compte membre chez nous. 
+                                        Pendant ces <strong>7 jours</strong>, venez découvrir le centre, ses installations et ses services. Pour bénéficier de cela, vous devez être 
+                                        muni du justificatif. 
+                                        <br>
+                                        Une fois que votre essai touche à sa fin, vous serez automatiquement facturé notre taux d’abonnement mensuel. Si vous ne voulez pas être 
+                                        facturé, vous devrez annuler votre abonnement avant la fin de votre essai gratuit. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    Article n°8 : Transport & Livraisons
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Lorsque vous effectuez un achat sur notre site, vous acceptez et reconnaissez de fournir un e-mail valide et une adresse d’expédition pour 
+                                        la commande. Nous nous réservons le droit de modifier, rejeter ou annuler votre commande chaque fois que cela devient nécessaire. Si nous 
+                                        annulons votre commande et avons déjà traité votre paiement, nous vous donnerons un remboursement équivalent au montant que vous avez payé. 
+                                        Vous convenez qu’il vous incombe de surveiller votre mode de paiement. Bien que nous visions à vous fournir une estimation précise des délais 
+                                        et des coûts d’expédition, ceux-ci peuvent varier en raison de circonstances imprévues. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingNine">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                    Article n°9 : Remboursements
+                                </button>
+                            </h2>
+                            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <span class="name-sec" id="name-sec"><i class="fa-solid fa-arrow-right"></i> Article 9.1 : Remboursements des biens</span>
+                                    <p>
+                                        Nous acceptons les demandes de remboursement sur notre site Internet pour les produits qui répondent à l’une des exigences suivantes : 
+                                        <div class="list-body" id="list-body">
+                                            <span class="name"><i class="fa-solid fa-arrow-right"></i> Le bien est cassé,</span>
+                                            <br>
+                                            <span class="name"><i class="fa-solid fa-arrow-right"></i> Le bien n'est pas tel que décrit,</span>
+                                            <br>
+                                            <span class="name"><i class="fa-solid fa-arrow-right"></i> Le bien est de mauvaise taille.</span>
+                                        </div>
+                                    </p>
+                                    <p>
+                                        Le remboursements ne s'appliquent pas aux produits/services suivants : 
+                                        <div class="list-body" id="list-body">
+                                            <span class="name"><i class="fa-solid fa-arrow-right"></i> Carte cadeaux,</span>
+                                            <br>
+                                            <span class="name"><i class="fa-solid fa-arrow-right"></i> Carte de fidélité,</span>
+                                            <br>
+                                            <span class="name"><i class="fa-solid fa-arrow-right"></i> Carte sport,</span>
+                                            <br>
+                                            <span class="name"><i class="fa-solid fa-arrow-right"></i> Carte membre.</span>
+                                        </div>
+                                    </p>
+                                    <span class="name-sec" id="name-sec"><i class="fa-solid fa-arrow-right"></i> Article 9.2 : Remboursements ou annulation des services</span>
+                                    <p>
+                                        <div class="list-body" id="list-body">
+                                            <span class="name">
+                                                <i class="fa-solid fa-arrow-right"></i> Les services vous sont entièrement remboursés en cas d’annulation d’au moins 72 heures 
+                                                avant la réservation de ce service, sinon des frais supplémentaires pourraient vous être facturés.
+                                            </span>
+                                            <br>
+                                            <span class="name">
+                                                <i class="fa-solid fa-arrow-right"></i> Pour les biens, il faut aussi nous envoyer des preuves ( photos, vidéos ) pour que 
+                                                le remboursement soit pris en charge. 
+                                            </span>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                    Article n°10 : Retours  
+                                </button>
+                            </h2>
+                            <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Les retours peuvent être effectués en personne aux endroits suivants : 
+                                        <div class="list-body" id="list-body">
+                                            <span class="name"><i class="fa-solid fa-arrow-right"></i> Tous nos centres,</span>
+                                            <br>
+                                            <span class="name"><i class="fa-solid fa-arrow-right"></i> Nos agences de livraison</span>
+                                        </div>
+                                    </p>
+                                    <p>
+                                        Veuillez suivre cette procédure pour retourner vos artciles : 
+                                        <div class="list-body" id="list-body">
+                                            <span class="name">
+                                                <i class="fa-solid fa-arrow-right"></i> Emballer vos bien que vous souhaitez retournez, apposez l’étiquette qui était 
+                                                inclus dans votre colis. Puis rendez-vous dans une de nos agences de livraison la plus proche de chez vous pour que 
+                                                le retour soit gratuit. Sinon rendez-vous au bureau de poste le plus proche de chez vous et payez les frais 
+                                                d’affranchissement nécessaires. 
+                                            </span>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingEleven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseEleven">
+                                    Article n°11 : Limitation de responsabilité
+                                </button>
+                            </h2>
+                            <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Kahina Ouali ou l’un de ses employés sera tenu responsable de tout problème découlant de ce site. Néanmoins, Kahina Ouali et ses 
+                                        employés ne seront pas tenus responsables de tout problème découlant de toute utilisation irrégulière de ce site. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwelve">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                                    Article n°12 : Indemnité 
+                                </button>
+                            </h2>
+                            <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        En tant qu’utilisateur, vous indemnisez par les présentes Kahina ouali de toute responsabilité, de tout coût, de toute cause d’action, 
+                                        de tout dommage ou de toute dépense découlant de votre utilisation de ce site ou de votre violation de l’une des dispositions énoncées 
+                                        dans le présent document. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThirtheen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirtheen" aria-expanded="false" aria-controls="collapseThirtheen">
+                                    Article n°13 : Lois applicables
+                                </button>
+                            </h2>
+                            <div id="collapseThirtheen" class="accordion-collapse collapse" aria-labelledby="headingThirtheen" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Ce document est soumis aux lois applicables en France et vise à se conformer à ses règles et règlements nécessaires. 
+                                        Cela inclut la réglementation à l'échelle de l’UE énoncée dans le RGPD. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFourteen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                                    Article n°13 : Lois applicables
+                                </button>
+                            </h2>
+                            <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Date d’entrée en vigueur le : <strong>03 juillet 2022</strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4">
+                    <div class="contact">
+                        <div class="cnt-lieu" id="cnt-lieu">
+                            <div class="txt-lieu" id="txt-lieu">
+                                <h4>Paris</h4>
+                                <p>
+                                    <span class="adresse" id="adresse">
+                                        2 rue de la Concorde, 75015, PARIS
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cnt-lieu-2" id="cnt-lieu-2">
+                            <div class="txt-lieu" id="txt-lieu">
+                                <h5>Lyon</h5>
+                                <p>
+                                    <span class="adresse" id="adresse">
+                                        25 rue Molière, 69000, LYON
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cnt-lieu-3" id="cnt-lieu-3">
+                            <div class="txt-lieu" id="txt-lieu">
+                                <h6>Marseille</h6>
+                                <p>
+                                    <span class="adresse" id="adresse">
+                                        17 rue Paul Vodaccioni, 13000, MARSEILLE
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4>Besoin d'aide ?</h4>
+                    <div class="nav" id="nav">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="../documents/conditions.html" class="a-aide">Conditions d'utilisation</a>
+                            </li>
+                            <li>
+                                <a href="../documents/cgv.html" class="a-aide">Conditions générales de vente</a>
+                            </li>
+                            <li>
+                                <a href="../documents/livraisons-retour.html" class="a-aide">Livraisons & Retours</a>
+                            </li>
+                            <li>
+                                <a href="../documents/mentions-legales.html" class="a-aide">Mentions légales</a>
+                            </li>
+                            <li>
+                                <a href="#" class="a-aide">Préférences des cookies</a>
+                            </li>
+                            <li>
+                                <a href="../documents/centre.html" class="a-aide">Politique du centre</a>
+                            </li>
+                            <li>
+                                <a href="../documents/cookies.html" class="a-aide">Politique des cookies</a>
+                            </li>
+                            <li>
+                                <a href="../documents/confidentialite.html" class="a-aide">Politique de confidenitalité</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="news" id="news">
+                        <h5>Notre newsletter</h5>
+                        <p>
+                            Rester informer de nos dernières nouveautés, articles, produits, etc.. 
+                        </p>
+                        <div class="form" id="form">
+                            <form action="#" method="post">
+                                <input type="email" name="email" id="email" placeholder="Adresse e-mail">
+                                <button class="btn btn-sm" type="submit">
+                                    <span>S'inscrire</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <div class="hours" id="hours">
+                        <h5>Horaires</h5>
+                        <p class="cnt-hours">
+                            Lundi au Vendredi : 10h à 18h
+                            <br>
+                            Samedi : 11h à 19h
+                            <br>
+                            Dimanche : <strong>Fermé</strong>
+                            <br>
+                            <br>
+                            <span class="holiday" id="holiday">
+                                Vacances : 
+                            </span>
+                            <br>
+                            <br>
+                            Lundi : <strong>Fermé</strong>
+                            <br>
+                            Mardi au Vendredi : 11h30 à 18h30
+                            <br>
+                            Samedi & Dimanche : 12h30 à 20h30
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <div class="members" id="members">
+                        <h6>Membres</h6>
+                        <div class="nav" id="nav">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="templates/membres/connexion.html">Connexion</a>
+                                </li>
+                                <li>
+                                    <a href="templates/membres/inscription.html">Inscription</a>
+                                </li>
+                                <li>
+                                    <a href="templates/membres/cartes.html">Cartes</a>
+                                </li>
+                                <li>
+                                    <a href="templates/prix/forfaits.html">Forfaits</a>
+                                </li>
+                                <li>
+                                    <a href="templates/prix/formules.html">Formules</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <div class="separator"></div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="name-web" id="name-web">
+                        <h6>MayGarden</h6>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="warning" id="warning">
+                        <p>
+                            <i class="fa-solid fa-triangle-exclamation"></i> 
+                            Ce site e-commerce est une démo et non un vrai site
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="reseaux" id="reseaux">
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i> 
+                            <span class="name">instagram</span>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <span class="name">facebook</span>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-snapchat"></i>
+                            <span class="name">Snapchat</span>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <span class="name">linkedIn</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="copyright" id="copyright">
+                        <span class="copy" id="copy">
+                            &copy; 2022 MayGarden - Tous droits Réservés
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Script Bootstrap -->
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" 
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" 
+        crossorigin="anonymous"></script> 
+    
+    <!-- / Fin Script Bootstrap -->
+
+    <!-- Font Awesome -->
+
+        <script src="https://kit.fontawesome.com/2740609f44.js" crossorigin="anonymous"></script> 
+    
+    <!-- / Fin Font Awesome -->
+
+    <!-- Autres Scripts -->
+
+        <script src="../../public/js/header.js"></script>
+
+    <!-- / Fin Des Autres Scripts-->
+
+</body>
+</html>

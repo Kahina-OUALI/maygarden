@@ -1,0 +1,86 @@
+.documents {
+    .intro-doc {
+        padding: 5% 0 5% 0;
+        h1 {
+            font-size: 55px;
+            text-align: center;
+            @extend %title;
+            color: $second-black;
+            @media screen and (max-width: $layout-breakpoints-xxs) {
+                font-size: 35px;
+            }
+        }
+        .txt-intro {
+            margin: 2% 0% 0% 0%;
+            p {
+                text-align: center;
+                @extend %text-intro;
+            }
+        }
+        @media screen and (max-width: $layout-breakpoints-sm) {
+            padding: 10% 0% 10% 0%;
+        }
+    }
+    .cnt-doc {
+        padding: 0% 0% 5% 0%;
+        @media screen and (max-width: $layout-breakpoints-xxs) {
+            padding: 0% 0% 10% 0%;
+        }
+        .accordion-item {
+            border: 0.2px solid $separator;
+            .accordion-header {
+                .accordion-button {
+                    font-size: 12px;
+                    @extend %title-accordion;
+                    @media screen and (max-width: $layout-breakpoints-xxs) {
+                        font-size: 10px;
+                    }
+                }
+                .accordion-button:not(.collapsed) {
+                    color: $beige;
+                    background-color: $brown;
+                }
+            }
+            .accordion-body {
+                p,
+                span {
+                    @extend %text-accordion;
+                    strong {
+                        font-weight: 800;
+                        color: $coral;
+                    }
+                    @media screen and (max-width: $layout-breakpoints-xxs) {
+                        font-size: 11.5px;
+                    }
+                }
+                .list-body {
+                    margin-left: 5%;
+                    span {
+                        i {
+                            color: $coral;
+                            margin-right: 10px;
+                        }
+                    }
+                    .name {
+                        font-weight: 800;
+                        color: $coral;
+                    }
+                }
+                .list-body-two {
+                    margin: 1% 0% 0% 3%;
+                    span {
+                        i {
+                            color: $beige;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                .name-sec {
+                    margin-left: 5%;
+                    font-weight: 900;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
