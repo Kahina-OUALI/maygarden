@@ -7,7 +7,7 @@ section {
         margin-bottom: 30px;
         @extend %title;
         @media screen and (max-width: $layout-breakpoints-xxs) {
-            font-size: 30px !important;
+            font-size: 28px !important;
         }
         @media screen and (max-width: $layout-breakpoints-sm) {
             font-size: 35px;
@@ -18,6 +18,9 @@ section {
         @extend %text;
         strong {
             font-weight: 800;
+        }
+        @media screen and (max-width: $layout-breakpoints-xxs) {
+            font-size: 14px;
         }
     }
     .btn {
@@ -387,6 +390,9 @@ section {
         .btn {
             width: 45%;
             @extend %button-dark;
+            @media screen and (max-width: $layout-breakpoints-xxs) {
+                width: 100%;
+            }
         }
     }
     .img {
@@ -394,6 +400,93 @@ section {
             width: 100%;
             @media screen and (max-width: $layout-breakpoints-xsm) {
                 margin-top: 40px;
+            }
+        }
+    }
+}
+.infos-sec {
+    padding: 5rem 0 5rem 0;
+    background-color: $beige;
+    @media screen and (max-width: $layout-breakpoints-xxs) {
+        padding: 3rem 0 3rem 0;
+    }
+    .image {
+        position: relative;
+        margin-left: -48%;
+        img {
+            width: 100%;
+        }
+        @media screen and (max-width: $layout-breakpoints-xsm) {
+            margin-right: 0% !important;
+            padding: 0% !important;
+        }
+        @media screen and (max-width: $layout-breakpoints-sm) {
+            margin-left: -32%;
+            margin-right: -60%;
+            padding-right: 60%;
+        }
+    }
+    #image {
+        @media screen and (max-width: $layout-breakpoints-xxs) {
+            margin-left: -7%;
+            margin-right: 0% !important;
+        }
+    }
+    .accordion {
+        padding: 60px 0px 40px 0px;
+        @media screen and (max-width: $layout-breakpoints-xsm) {
+            margin: 45px 0px 0px 0px;
+        }
+        @media screen and (max-width: $layout-breakpoints-sm) {
+            padding: 0px;
+        }
+        .accordion-item {
+            margin-bottom: 20px;
+            .accordion-button {
+                border: 2px solid $coral;
+                background-color: $beige !important;
+                color: $black;
+                @extend %title-accordion;
+                &:not(.collapsed) {
+                    &::after {
+                        content: "-";
+                        font-size: 18px;
+                        font-weight: 800;
+                        background-image: none !important;
+                    }
+                }
+            }
+            .accordion-body {
+                background-color: $beige !important;
+                p,
+                span {
+                    @extend %text-accordion;
+                    strong {
+                        font-weight: 800;
+                        color: $coral;
+                    }
+                }
+                .list {
+                    margin-left: 5%;
+                    .name {
+                        font-weight: 800;
+                    }
+                    span {
+                        i {
+                            color: $brown;
+                        }
+                    }
+                    .list-body {
+                        margin-left: 10%;
+                    }
+                    @media screen and (max-width: $layout-breakpoints-xxs) {
+                        font-size: 14px;
+                        margin-top: 10px;
+                        .list-body {
+                            margin-top: 10px;
+                        }
+                    }
+                }
             }
         }
     }

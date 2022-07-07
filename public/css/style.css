@@ -283,6 +283,27 @@ footer .news .form .btn:hover span:after {
   right: 0;
 }
 
+.infos-sec .accordion .accordion-item .accordion-button {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Antic Didone", serif;
+}
+@media screen and (max-width: 780px) {
+  .infos-sec .accordion .accordion-item .accordion-button {
+    font-size: 14px;
+  }
+}
+
+.infos-sec .accordion .accordion-item .accordion-body p,
+.infos-sec .accordion .accordion-item .accordion-body span {
+  color: #2D2D2D;
+  font-weight: 300;
+  text-align: justify;
+  font-family: "Nunito Sans", sans-serif;
+}
+
 .documents .cnt-doc .accordion-item .accordion-header .accordion-button {
   font-weight: 800;
   letter-spacing: 2px;
@@ -826,7 +847,7 @@ section h5 {
 section h3,
 section h4,
 section h5 {
-    font-size: 30px !important;
+    font-size: 28px !important;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -842,6 +863,11 @@ section p {
 }
 section p strong {
   font-weight: 800;
+}
+@media screen and (max-width: 480px) {
+  section p {
+    font-size: 14px;
+  }
 }
 section .btn {
   margin-top: 30px;
@@ -1299,12 +1325,109 @@ section .btn {
 .carte .cnt-carte .btn {
   width: 45%;
 }
+@media screen and (max-width: 480px) {
+  .carte .cnt-carte .btn {
+    width: 100%;
+  }
+}
 .carte .img img {
   width: 100%;
 }
 @media screen and (max-width: 780px) {
   .carte .img img {
     margin-top: 40px;
+  }
+}
+
+.infos-sec {
+  padding: 5rem 0 5rem 0;
+  background-color: #EFE4CB;
+}
+@media screen and (max-width: 480px) {
+  .infos-sec {
+    padding: 3rem 0 3rem 0;
+  }
+}
+.infos-sec .image {
+  position: relative;
+  margin-left: -48%;
+}
+.infos-sec .image img {
+  width: 100%;
+}
+@media screen and (max-width: 780px) {
+  .infos-sec .image {
+    margin-right: 0% !important;
+    padding: 0% !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .infos-sec .image {
+    margin-left: -32%;
+    margin-right: -60%;
+    padding-right: 60%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .infos-sec #image {
+    margin-left: -7%;
+    margin-right: 0% !important;
+  }
+}
+.infos-sec .accordion {
+  padding: 60px 0px 40px 0px;
+}
+@media screen and (max-width: 780px) {
+  .infos-sec .accordion {
+    margin: 45px 0px 0px 0px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .infos-sec .accordion {
+    padding: 0px;
+  }
+}
+.infos-sec .accordion .accordion-item {
+  margin-bottom: 20px;
+}
+.infos-sec .accordion .accordion-item .accordion-button {
+  border: 2px solid #D08C60;
+  background-color: #EFE4CB !important;
+  color: #2D2926;
+}
+.infos-sec .accordion .accordion-item .accordion-button:not(.collapsed)::after {
+  content: "-";
+  font-size: 18px;
+  font-weight: 800;
+  background-image: none !important;
+}
+.infos-sec .accordion .accordion-item .accordion-body {
+  background-color: #EFE4CB !important;
+}
+.infos-sec .accordion .accordion-item .accordion-body p strong,
+.infos-sec .accordion .accordion-item .accordion-body span strong {
+  font-weight: 800;
+  color: #D08C60;
+}
+.infos-sec .accordion .accordion-item .accordion-body .list {
+  margin-left: 5%;
+}
+.infos-sec .accordion .accordion-item .accordion-body .list .name {
+  font-weight: 800;
+}
+.infos-sec .accordion .accordion-item .accordion-body .list span i {
+  color: #C59F7B;
+}
+.infos-sec .accordion .accordion-item .accordion-body .list .list-body {
+  margin-left: 10%;
+}
+@media screen and (max-width: 480px) {
+  .infos-sec .accordion .accordion-item .accordion-body .list {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .infos-sec .accordion .accordion-item .accordion-body .list .list-body {
+    margin-top: 10px;
   }
 }
 

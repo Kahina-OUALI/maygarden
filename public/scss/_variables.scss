@@ -7,6 +7,7 @@ $brown: #C59F7B;
 $second-black: #2D2D2D;
 $grey: #E4E4E4;
 $separator: #c59f7b7e; 
+$bg-accordion: #efe4cb18;
 
 $title: 'Antic Didone', serif;
 $text: 'Nunito Sans', sans-serif;
@@ -300,12 +301,28 @@ $layout-breakpoints-xs-sm: 1170px;
 // ACCORDION 
 
 %title-accordion {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: $title; 
+    @media screen and (max-width: $layout-breakpoints-xsm) {
+        font-size: 14px;
+    }
+}
+%text-accordion {
+    color: $second-black;
+    font-weight: 300;
+    text-align: justify;
+    font-family: $text;
+}
+%title-accordion-2 {
     font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-family: $text;
 }
-%text-accordion {
+%text-accordion-2 {
     font-size: 13.5px;
     color: $second-black;
     font-weight: 300;

@@ -31,7 +31,7 @@
             .accordion-header {
                 .accordion-button {
                     font-size: 12px;
-                    @extend %title-accordion;
+                    @extend %title-accordion-2;
                     @media screen and (max-width: $layout-breakpoints-xxs) {
                         font-size: 10px;
                     }
@@ -44,7 +44,7 @@
             .accordion-body {
                 p,
                 span {
-                    @extend %text-accordion;
+                    @extend %text-accordion-2;
                     strong {
                         font-weight: 800;
                         color: $coral;
