@@ -6,6 +6,12 @@ section {
         font-size: 45px;
         margin-bottom: 30px;
         @extend %title;
+        @media screen and (max-width: $layout-breakpoints-xxs) {
+            font-size: 30px !important;
+        }
+        @media screen and (max-width: $layout-breakpoints-sm) {
+            font-size: 35px;
+        }
     }
     p {
         font-size: 18px;
@@ -117,6 +123,9 @@ section {
 .spa {
     padding: 5rem 0 5rem 0;
     background-color: $beige;
+    @media screen and (max-width: $layout-breakpoints-xxs) {
+        padding: 3rem 0 3rem 0;
+    }
     .cnt-spa {
         padding: 20% 0% 20% 0%;
         h3 {
@@ -127,15 +136,33 @@ section {
         }
         p {
             padding-right: 14%;
+            @media screen and (max-width: $layout-breakpoints-xxs) {
+                padding: 0%;
+            }
+        }
+        @media screen and (max-width: $layout-breakpoints-xxs) {
+            margin-bottom: 30px;
+        }
+        @media screen and (max-width: $layout-breakpoints-xsm) {
+            padding: 0%;
         }
     }
     .img-one {
         z-index: 8;
         position: relative;
         img {
+            @media screen and (max-width: $layout-breakpoints-xxs) {
+                padding-right: 13%;
+            }
             @media screen and (max-width: $layout-breakpoints-sm) {
                 width: 100%;
             }
+        }
+        @media screen and (max-width: $layout-breakpoints-xxs) {
+            margin: 5% 0% 0% 0% !important;
+        }
+        @media screen and (max-width: $layout-breakpoints-xsm) {
+            margin-left: -11%;
         }
     }
     .img-two {
@@ -147,12 +174,154 @@ section {
                 width: 100%;
             }
         }
+        @media screen and (max-width: $layout-breakpoints-xxs) {
+            margin: -5% 0% 0 0% !important;
+        }
+        @media screen and (max-width: $layout-breakpoints-xsm) {
+            margin: -5% -10% 0 9%;
+        }
         @media screen and (max-width: $layout-breakpoints-sm) {
             margin: -5% -6% 0 9%;
+            padding: 0px;
         }
     }
     .btn {
         width: 45%;
         @extend %button-clair;
+        @media screen and (max-width: $layout-breakpoints-xxs) {
+            width: 100% !important;
+            margin-top: 10px !important;
+        }
+        @media screen and (max-width: $layout-breakpoints-xsm) {
+            width: 87%;
+        }
+    }
+}
+.reservation {
+    padding: 5rem 0 5rem 0;
+    background-color: $black;
+    @media screen and (max-width: $layout-breakpoints-xxs) {
+        padding: 3rem 0 3rem 0;
+    }
+    .fond {
+        height: 700px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-image: url(../img/contact/Reservation\ -\ MayGarden.png);
+        .cnt-res-one {
+            width: 45%;
+            padding: 30px;
+            margin: 5% 0 0 -4%;
+            background-color: $black;
+            a {
+                font-weight: 600;
+                color: $coral;
+                font-size: 35px;
+                margin-left: -12%;
+                text-decoration: none;
+                letter-spacing: 3.2px;
+                text-transform: uppercase;
+                @media screen and (max-width: $layout-breakpoints-sm) {
+                    margin-left: 0%;
+                }
+            }
+            @media screen and (max-width: $layout-breakpoints-xsm) {
+                width: 80% !important;
+            }
+            @media screen and (max-width: $layout-breakpoints-sm) {
+                width: 65%;
+                margin: 5% 0 0 -2%;
+            }
+        }
+        #cnt-res-one {
+            @media screen and (max-width: $layout-breakpoints-xxs) {
+                width: 100% !important;
+                margin: 15% 0 0 -3%;
+                a {
+                    font-size: 22px;
+                }
+            }
+        }
+        .cnt-res-two {
+            width: 45%;
+            padding: 30px;
+            margin: 25% 0% 0 65%;
+            background-color: $black;
+            a {
+                font-weight: 600;
+                color: $coral;
+                font-size: 35px;
+                margin-left: 28%;
+                text-decoration: none;
+                letter-spacing: 3.2px;
+                text-transform: uppercase;
+                @media screen and (max-width: $layout-breakpoints-xsm) {
+                    margin-left: 11%;
+                }
+                @media screen and (max-width: $layout-breakpoints-sm) {
+                    margin-left: 18%;
+                }
+            }
+            @media screen and (max-width: $layout-breakpoints-xsm) {
+                margin: 54% 0% 0 38%;
+            }
+            @media screen and (max-width: $layout-breakpoints-sm) {
+                width: 65%;
+                margin: 36% 0% 0 38%;
+            }
+        }
+        #cnt-res-two {
+            @media screen and (max-width: $layout-breakpoints-xxs) {
+                width: 100%;
+                margin: 100% 0% 0 3%;
+                a {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+.pres-boutique {
+    padding: 5rem 0 5rem 0;
+    background-color: $brown;
+    @media screen and (max-width: $layout-breakpoints-xxs) {
+        padding: 3rem 0 3rem 0;
+    }
+    .image,
+    .image-2 {
+        img {
+            width: 100%;
+        }
+    }
+    .image-2 {
+        padding: 20px 0px 20px 0px;
+        @media screen and (max-width: $layout-breakpoints-xxs) {
+            padding: 0px;
+        }
+    }
+    .cnt-boutique {
+        padding: 20px 0px 20px 0px;
+        h3 {
+            color: $beige;
+            padding-top: 20px;
+            @media screen and (max-width: $layout-breakpoints-sm) {
+                margin-bottom: 20px;
+            }
+        }
+        p {
+            @media screen and (max-width: $layout-breakpoints-sm) {
+                margin-bottom: 0px;
+            }
+        }
+        .btn {
+            @extend %button-pres-boutique;
+            @media screen and (max-width: $layout-breakpoints-xxs) {
+                margin-bottom: 20px;
+            }
+        }
+        @media screen and (max-width: $layout-breakpoints-sm) {
+            padding: 0px 0px 0px 0px;
+        }
     }
 }
