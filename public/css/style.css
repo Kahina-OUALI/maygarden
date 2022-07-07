@@ -240,6 +240,49 @@ footer .news .form .btn:hover span:after {
   right: 0;
 }
 
+.carte .cnt-carte .btn {
+  padding: 15px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #C59F7B;
+  text-align: center;
+  border-radius: 0px;
+  transition: all 0.5s;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border: 2px solid #C59F7B;
+  background-color: transparent;
+  font-family: "Antic Didone", serif;
+}
+.carte .cnt-carte .btn span {
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 3px;
+  font-family: "Antic Didone", serif;
+}
+.carte .cnt-carte .btn span::after {
+  top: 0;
+  opacity: 0;
+  right: -20px;
+  content: "»";
+  transition: 0.5s;
+  position: absolute;
+}
+.carte .cnt-carte .btn:hover {
+  border: 0.5px solid #EFE4CB;
+  background: #EFE4CB;
+}
+.carte .cnt-carte .btn:hover span {
+  color: #C59F7B;
+  padding-right: 25px;
+}
+.carte .cnt-carte .btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 .documents .cnt-doc .accordion-item .accordion-header .accordion-button {
   font-weight: 800;
   letter-spacing: 2px;
@@ -1041,16 +1084,15 @@ section .btn {
   background-image: url(../img/contact/Reservation\ -\ MayGarden.png);
 }
 .reservation .fond .cnt-res-one {
-  width: 45%;
+  width: 30%;
   padding: 30px;
-  margin: 5% 0 0 -4%;
+  margin: 5% 0 0 -1%;
   background-color: #2D2926;
 }
 .reservation .fond .cnt-res-one a {
   font-weight: 600;
   color: #D08C60;
   font-size: 35px;
-  margin-left: -12%;
   text-decoration: none;
   letter-spacing: 3.2px;
   text-transform: uppercase;
@@ -1062,16 +1104,16 @@ section .btn {
 }
 @media screen and (max-width: 780px) {
   .reservation .fond .cnt-res-one {
-    width: 80% !important;
+    margin: 10% 0 0 -2% !important;
   }
 }
 @media screen and (max-width: 1024px) {
   .reservation .fond .cnt-res-one {
-    width: 65%;
+    width: 46%;
     margin: 5% 0 0 -2%;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
   .reservation .fond #cnt-res-one {
     width: 100% !important;
     margin: 15% 0 0 -3%;
@@ -1080,49 +1122,64 @@ section .btn {
     font-size: 22px;
   }
 }
+@media screen and (max-width: 480px) {
+  .reservation .fond #cnt-res-one {
+    width: 70%;
+    margin: 58% 0% 0 3%;
+  }
+  .reservation .fond #cnt-res-one a {
+    font-size: 22px;
+  }
+}
 .reservation .fond .cnt-res-two {
-  width: 45%;
+  width: 30%;
   padding: 30px;
-  margin: 25% 0% 0 65%;
+  text-align: center;
+  margin: 25% 0% 0 71%;
   background-color: #2D2926;
 }
 .reservation .fond .cnt-res-two a {
   font-weight: 600;
   color: #D08C60;
   font-size: 35px;
-  margin-left: 28%;
   text-decoration: none;
   letter-spacing: 3.2px;
   text-transform: uppercase;
 }
 @media screen and (max-width: 780px) {
-  .reservation .fond .cnt-res-two a {
-    margin-left: 11%;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .reservation .fond .cnt-res-two a {
-    margin-left: 18%;
-  }
-}
-@media screen and (max-width: 780px) {
   .reservation .fond .cnt-res-two {
-    margin: 54% 0% 0 38%;
+    margin: 47% 0% 0 56% !important;
   }
 }
 @media screen and (max-width: 1024px) {
   .reservation .fond .cnt-res-two {
-    width: 65%;
-    margin: 36% 0% 0 38%;
+    width: 46%;
+    margin: 39% 0% 0 56%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .reservation .fond #cnt-res-two {
+    width: 73% !important;
   }
 }
 @media screen and (max-width: 480px) {
   .reservation .fond #cnt-res-two {
-    width: 100%;
-    margin: 100% 0% 0 3%;
+    width: 72%;
+    text-align: end !important;
+    margin: 47% 0% 0 31% !important;
   }
   .reservation .fond #cnt-res-two a {
     font-size: 22px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .reservation .fond {
+    height: 410px !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reservation .fond {
+    height: 500px;
   }
 }
 
@@ -1138,6 +1195,24 @@ section .btn {
 .pres-boutique .image img,
 .pres-boutique .image-2 img {
   width: 100%;
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+.pres-boutique .image img:hover,
+.pres-boutique .image-2 img:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 480px) {
+  .pres-boutique .image,
+.pres-boutique .image-2 {
+    padding: 0px !important;
+  }
+}
+@media screen and (max-width: 780px) {
+  .pres-boutique .image,
+.pres-boutique .image-2 {
+    padding: 20px 0px 20px 0px;
+  }
 }
 .pres-boutique .image-2 {
   padding: 20px 0px 20px 0px;
@@ -1172,6 +1247,64 @@ section .btn {
 @media screen and (max-width: 1024px) {
   .pres-boutique .cnt-boutique {
     padding: 0px 0px 0px 0px;
+  }
+}
+
+.carte {
+  padding: 5rem 0 5rem 0;
+  background-color: #2D2926;
+}
+@media screen and (max-width: 480px) {
+  .carte {
+    padding: 3rem 0 3rem 0;
+  }
+}
+.carte .cnt-carte {
+  padding: 40px 0px 40px 0px;
+}
+@media screen and (max-width: 1024px) {
+  .carte .cnt-carte {
+    padding: 0px;
+  }
+}
+.carte .cnt-carte h4 {
+  color: #EFE4CB;
+}
+.carte .cnt-carte p {
+  color: #E4E4E4;
+  padding-right: 14%;
+}
+@media screen and (max-width: 780px) {
+  .carte .cnt-carte p {
+    padding: 0%;
+  }
+  .carte .cnt-carte p br {
+    display: block;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .carte .cnt-carte p br {
+    display: none;
+  }
+}
+.carte .cnt-carte .list {
+  margin-left: 5%;
+}
+.carte .cnt-carte .list span {
+  color: #D08C60;
+}
+.carte .cnt-carte .list span i {
+  color: #D08C60;
+}
+.carte .cnt-carte .btn {
+  width: 45%;
+}
+.carte .img img {
+  width: 100%;
+}
+@media screen and (max-width: 780px) {
+  .carte .img img {
+    margin-top: 40px;
   }
 }
 

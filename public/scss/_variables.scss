@@ -254,6 +254,48 @@ $layout-breakpoints-xs-sm: 1170px;
 		}
 	}
 }
+%button-dark {
+    padding: 15px;
+    font-size: 13px;
+    cursor: pointer;
+    color: $brown;
+    text-align: center;
+    border-radius: 0px;
+    transition: all 0.5s;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: 2px solid $brown;
+    background-color: transparent;
+    font-family: $title;
+    span {
+        cursor: pointer;
+        transition: 0.5s;
+        position: relative;
+        display: inline-block;
+        letter-spacing: 3px;
+        font-family: $title;
+        &::after {
+            top: 0;
+            opacity: 0;
+            right: -20px;
+            content: "\00bb";
+            transition: 0.5s;
+            position: absolute;
+        }
+    }
+    &:hover {
+        border: 0.5px solid $beige;
+        background: $beige;
+		span {
+            color: $brown;
+            padding-right: 25px;
+			&:after {
+				opacity: 1;
+				right: 0;
+			}
+		}
+	}
+}
 
 // ACCORDION 
 
